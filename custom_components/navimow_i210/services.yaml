@@ -1,0 +1,7 @@
+cancel_schedule:
+  name: Cancel Schedule
+  description: Cancel the current mowing schedule
+  target:
+    device:
+      integration: navimow_i210
+ 
