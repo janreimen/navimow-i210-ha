@@ -1,0 +1,12 @@
+{
+  "domain": "navimow_i210",
+  "name": "Segway Navimow i210",
+  "codeowners": ["@andershagenhansen", "@TMA84"],
+  "config_flow": true,
+  "documentation": "https://github.com/andershagenhansen/navimow-ha-custom",
+  "issue_tracker": "https://github.com/andershagenhansen/navimow-ha-custom/issues",
+  "iot_class": "cloud_push",
+  "requirements": ["navimow-sdk>=0.1.2"],
+  "version": "2.0.0",
+  "homeassistant": "2024.1.0"
+}

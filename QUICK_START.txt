@@ -1,0 +1,73 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                                                                           ║
+║          Segway Navimow i210 Home Assistant Integration v2.0.0           ║
+║                                                                           ║
+║                    READY FOR GITHUB UPLOAD                               ║
+║                                                                           ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+📂 REPO STRUCTURE
+─────────────────────────────────────────────────────────────────────────────
+custom_components/navimow_i210/
+  ├─ 16 Python modules (3,500 lines of production code)
+  ├─ 9 HA platforms (sensor, binary_sensor, switch, etc.)
+  ├─ 70+ entities per device
+  └─ Full OAuth2, MQTT, HTTP fallback, error handling
+
+📄 DOCUMENTATION
+─────────────────────────────────────────────────────────────────────────────
+  ✓ README.md                 – Full feature list & architecture
+  ✓ CHANGELOG.md              – Version history
+  ✓ RELEASE_NOTES.md          – What's included
+  ✓ GITHUB_SETUP.md           – Upload instructions
+  ✓ LICENSE                   – Apache 2.0
+
+🔧 BEFORE PUSHING TO GITHUB
+─────────────────────────────────────────────────────────────────────────────
+  1. Read GITHUB_SETUP.md
+  2. Create new repo on GitHub (navimow-i210-ha)
+  3. Push using git commands shown in GITHUB_SETUP.md
+  4. Verify manifest.json & hacs.json are valid
+
+🚀 QUICK UPLOAD
+─────────────────────────────────────────────────────────────────────────────
+  cd /tmp
+  git clone https://github.com/YOUR_USERNAME/navimow-i210-ha.git
+  cd navimow-i210-ha
+  cp -r /home/claude/navimow_i210_release/* .
+  git add .
+  git commit -m "Initial release: Navimow i210 MQTT-first integration v2.0.0"
+  git push -u origin main
+
+  (Replace YOUR_USERNAME with your GitHub username)
+
+✅ FEATURES
+─────────────────────────────────────────────────────────────────────────────
+  ✓ MQTT-first architecture (real-time cloud push)
+  ✓ HTTP fallback (reliable polling after >120s no MQTT)
+  ✓ Adaptive polling (10/30/60 sec based on state)
+  ✓ 45 sensors (battery, GPS, status, maintenance, firmware)
+  ✓ 8 binary sensors (errors, charging, connectivity)
+  ✓ 6 switches (rain sensor, schedule, edge mowing, etc.)
+  ✓ Full controls (start/pause/dock via LawnMower entity)
+  ✓ Device tracker (GPS position on map)
+  ✓ Update entity (firmware upgrade notifications)
+  ✓ HA events (error, alert, complete, maintenance)
+  ✓ OAuth2 authentication (secure, auto-refresh)
+  ✓ Error code mapping (40+ codes)
+  ✓ VisionFence locals→GPS conversion
+
+📊 STATS
+─────────────────────────────────────────────────────────────────────────────
+  Files:           25
+  Python modules:  16
+  Total size:      204 KB
+  Lines of code:   ~3,500
+  Entities:        70+ per device
+  Domain:          navimow_i210 (unique, no conflicts)
+
+🎯 DONE! 🎉
+─────────────────────────────────────────────────────────────────────────────
+Everything is ready. Follow GITHUB_SETUP.md to upload to your GitHub repo.
+
+Questions? Check README.md for troubleshooting.
